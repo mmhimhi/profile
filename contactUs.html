@@ -2,22 +2,44 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale"=1.0>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<!-- <script type="text/javascript" src="main.js"></script> -->
 </head>
 <body>
 	<div class="main">	
-	<p class="title"> Please fill out the quick form and I will be in touch with lightening speed.</p>
+		<h3 class="title">
+			Please fill out the quick form and I will be in touch with lightening speed.
+		</h3>
 		<div class="form-content">
 			<form id="contact">
-				<input type="text" name="name" placeholder="Name"required>
-				<input type="email" name="email" placeholder="Email" required="">
-				<input type="text" name="name" placeholder="Title" required="">
-				<textarea name="message"placeholder="Message" required=""> </textarea>
-				<input type="submit" name="send" value="Submit" required="">
+				<!-- Name field -->
+				<input type="text" name="name" placeholder="Name" id="username" class="normal" required>
+				<!-- Error Message -->
+				<p class="error-alert" id="nameError">
+					Name must be up to minimum of 4 strings!
+				</p>
+
+				<!-- Email -->
+				<input type="email" name="email" placeholder="Email" class="normal" required="" id="email">
+				<!-- Error Message -->
+				<p class="error-alert" id="emailError"></p>
+
+				<!-- Title -->
+				<input type="text" class="normal" name="name" placeholder="Title" required="" id="title">
+
+				<!-- Message -->
+				<textarea name="message"placeholder="Message" required="" id="message" class="normal"> </textarea>
+				<!-- Error Message -->
+				<p class="error-alert" id="messageError">
+					Your message must contain at least 20 characters.
+				</p>
+
+				<!-- Submit -->
+				<input type="submit" name="send" value="Submit" required="" id="submit">
 			</form>
 		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
