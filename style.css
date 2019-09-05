@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+			background: transparent;
+		}
+				
+		.content{
+			width: 70%;
+			height: 200%;
+			margin: auto;
+			padding: 50px 30px 50px 30px;
+					}
+		.image{
+			background-image: url("https://res.cloudinary.com/dhubvgual/image/upload/v1566598974/IMG_20181104_122819_0_ooz9d1.jpg");
+			height: 220px;
+			background-size: 200px;
+			background-repeat: no-repeat;
+			box-sizing: border-box;
+			width: 20%;
+			border: 3px solid #009bffc9;
+		}
+		.line{
+			border:  2px solid #009bffc9;
+
+		}
+		.first{
+			float: right;
+			width: 70%;
+		}
+		.first #name{
+			font-weight: bold;
+			font-size: 50px;
+			margin-bottom: 0px;
+			text-align: center;
+
+		}
+		.first #title{
+			font-size: 15px;
+			margin-top: 0px;
+			text-align: center;
+			font-weight: bold;
+			color: #009bffc9;
+			}
+		.first #contact{
+			font-size: 15px;
+			margin-top: 0px;
+			text-align: center;
+			font-weight: bold;
+		}
+		.skill{
+			color:#009bffc9;
+			margin-top: 30px;
+			float: left;
+			width: 30%;
+		}
+		#list{
+			float: right;
+			width: 70%;
+		}
+		ul{
+			color: #ff5722;
+			font-weight: bold;
+		}
+		.edu{
+			margin-top: 150px;
+			float: left;
+			width: 10%;
+			color: #009bffc9;
+			margin-left: 215px;
+
+		}
+		.education2{
+			float: right;
+			width: 63%;
+		}
+		.education2 #year{
+			color: #ff5722;
+			font-weight: bold;
+		}
+		.education2 #institution{
+			color: #ff5722;
+			font-weight: bold;
+		}
+		.experience{
+			margin-top: 100px;
+			float: left;
+			width: 10%;
+			color: #009bffc9;
+			margin-left: 215px;
+		}
+			.resume{
+			float: right;
+			width: 70%;
+			margin-top: 0px;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+			padding: 20px;
+			border: 2px solid #009bffc9;
+		}
+		.resume th{
+			background-color:  #009bffc9;
+			color: #fff;
+			padding: 5px;
+			text-align: center;
+		}
+		.resume td{
+			text-align: center;
+			padding:5px;
+			border: 2px solid #009bffc9;
+		}
+		a{
+			text-decoration: none;
+			padding: 10px 30px;
+			background-color: #ff5722;
+			float: right;
+			color: #fff;
+			font-weight: bold;
+			left: 29px;
+		}
