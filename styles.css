@@ -4,51 +4,91 @@ body{
 	background-color: #ddd;
 
 }
-		input[type=text], input[type=email], textarea{
-			display: flex;
-			-webkit-box-sizing:border-box;
-			-moz-box-sizing:border-box;
-			box-sizing: border-box;
-			border-radius: 2px;
-			padding: 10px;
-			width: 100%;
-			outline: none;
-		}
-		input, textarea{
-			margin:10px 0px;
-			margin-bottom: 20px;
-			border: none;
 
-		}
-		input:focus, textarea:focus{
-			border:2px solid #ff5722;
-		}
-		textarea{
-			padding: 40px;
-		}
-		.main{
-			max-width: 50%;
-			margin: auto;/*
-			background-color: #009bffc9*/;
-						
+.main{
+	width: 100%;
+	margin: auto;/*
+	background-color: #009bffc9*/;
+}
+.form-content{
+	padding: 20px;
+}
+.title{
+	margin-bottom: 0;
+	text-align: left;
+	padding: 30px;
+	padding-bottom: 0;
 
-		}
-		.form-content{
-			padding: 20px;
-		}
-		.title{
-			margin-bottom: 0;
-			text-align: left;
-			font-size: 15px;
-			padding: 30px;
-			padding-bottom: 0;
+	
+}
 
-			
-		}
-		input[type=submit]{
-			padding: 10px 30px;
-			background-color: #009bffc9;
-			color:#fff ;
-			outline: none;
-			border: none;
-		}
+.normal, .error{
+	display: flex;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+	border-radius: 2px;
+	padding: 10px;
+	width: 100%;
+	outline: none;
+}
+
+.normal, .error{
+	margin:10px 0px;
+	border: none;
+
+}
+
+.error, .textarea-error {
+	border:3px solid #ff5722;
+}
+
+.error-alert {
+	color: #ff5722;
+}
+
+.normal:focus, .error:focus{
+	border:2px solid #009bffc9;
+}
+
+textarea.normal, textarea.textarea-error{
+	height: 200px;
+    width: 100%;
+    resize: none;
+    overflow: auto;
+    padding: 7px;
+}
+
+#nameError, #emailError, #messageError {
+	display: none;
+}
+
+input[type=submit]{
+	padding: 10px 30px;
+	background-color: #009bffc9;
+	color:#fff ;
+	outline: none;
+	border: none;
+    margin-top: 15px;
+}
+
+/* ==================== Responsiveness ===================*/
+
+/* Tablets*/
+@media only screen and (min-width: 600px) {
+    .main{
+		width: 100%;
+		margin: auto;/*
+		background-color: #009bffc9*/;
+	}
+}
+
+/*Laptops and Desktops*/
+
+@media only screen and (min-width: 1000px) {
+    .main{
+		width: 60%;
+		margin: auto;/*
+		background-color: #009bffc9*/;
+	}
+}
